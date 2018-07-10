@@ -8,16 +8,15 @@ import {
   NavItem,
   NavLink,
   Container,
-  Collapse
-} from 'reactstrap'
+  Collapse,
+} from 'reactstrap';
 
 class AppNavBar extends Component {
-
-  state = { isOpen: true }
+  state = { isOpen: true };
 
   toggle = () => {
     this.setState({ isOpen: !this.state.isOpen });
-  }
+  };
   render() {
     return (
       <div>
@@ -28,9 +27,7 @@ class AppNavBar extends Component {
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
                 <NavItem>
-                  <NavLink href="https://github.com/brandonsmith8038">
-                    GitHub
-                </NavLink>
+                  <NavLink href="https://github.com/brandonsmith8038">GitHub</NavLink>
                 </NavItem>
               </Nav>
             </Collapse>
